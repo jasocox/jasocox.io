@@ -5,13 +5,16 @@ import { RouterProvider } from 'react-router/dom';
 
 import './index.css';
 import App from './App.tsx';
+import Home from './Home.tsx';
 
 const root = document.getElementById('root');
 
 const router = createBrowserRouter([
   {
-    index: true,
     Component: App,
+    children: [
+      { index: true, Component: Home },
+    ],
   },
 ]);
 
