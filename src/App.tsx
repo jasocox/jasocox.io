@@ -3,10 +3,9 @@ import './App.css';
 
 function App() {
   return (
-    <>
-      <h1>jasocox.io</h1>
+    <main className="max-w-2xl mx-auto p-8">
       <Outlet />
-    </>
+    </main>
   );
 }
 
